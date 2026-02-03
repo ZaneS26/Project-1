@@ -2,7 +2,7 @@
 # Project Files
 - [Dataset (CSV)](https://github.com/ZaneS26/Project-1/blob/main/Project%20%231/AirQuality_Daily_StudentVersion.csv)
 - [Jupyter Notebook](https://github.com/ZaneS26/Project-1/blob/main/Project%20%231/Python%20Code.ipynb)
-- [Python Script](raw.py)
+- [Python Script](https://github.com/ZaneS26/Project-1/blob/main/Project%20%231/raw.py)
 
 
 # Overview
