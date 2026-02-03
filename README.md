@@ -1,7 +1,7 @@
 # Project-1-Air Quality Analysis 
 # Project Files
-- [Dataset (CSV)](AirQuality_Daily_StudentVersion.csv)
-- [Jupyter Notebook](http://localhost:8888/notebooks/Downloads/CIVE%20202/Project%20%231/Python%20Code.ipynb)
+- [Dataset (CSV)]()
+- [Jupyter Notebook](https://github.com/ZaneS26/Project-1/blob/main/Project%20%231/Python%20Code.ipynb)
 - [Python Script](raw.py)
 
 
