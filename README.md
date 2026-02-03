@@ -23,7 +23,7 @@ This project analyzes air quality sensor data to explore patterns in:
 
 # Dataset Expectations
 
-The analysis loads the CSV into a Pandas DataFrame (typically named air_data).
+The analysis loads the CSV into a Pandas DataFrame named air_data.
 Key columns used:
 
 date (formatted like mm/dd/yy)
@@ -53,7 +53,7 @@ Finds top 5 locations by mean pollutant values
 
 # 2) Max Values: When and Where?
 
-Identifies the date(s) and sensor location(s) where the maximum PM2.5, PM10, and VOC values occurred
+Identifies the dates and sensor locations where the maximum PM2.5, PM10, and VOC values occurred
 
 # 3) Temperature & Humidity Categorization
 
@@ -77,15 +77,45 @@ Warm: 51–70
 
 Hot: > 70
 
-# 4) Altitude Impact
+# Step 4 — EPA Health Risk Screening (Simplified Categories)
 
-Aggregates to one row per sensor location
+This step screens for potential air quality health risks using EPA-style category breakpoints applied directly to concentration values.
 
-Computes Pearson and Spearman correlations between altitude and PM/VOC values
+For PM2.5:
 
-Also performs a trimmed (outlier-reduced) correlation check
+Good: 0.0–12.0
 
-# 5) AQI Health Risk Screening (PM2.5 and PM10)
+Moderate: 12.1–35.4
 
+Unhealthy for Sensitive Groups: 35.5–55.4
 
+Unhealthy: 55.5–150.4
 
+Very Unhealthy: 150.5–250.4
+
+Hazardous: > 250.4
+
+For PM10:
+
+Good: 0–54
+
+Moderate: 55–154
+
+Unhealthy for Sensitive Groups: 155–254
+
+Unhealthy: 255–354
+
+Very Unhealthy: 355–424
+
+Hazardous: > 424
+
+The code then filters and reports all events where:
+
+“Unhealthy for Sensitive Groups” or worse occurred
+and lists when and where those events happened for both PM2.5 and PM10.
+
+# Step 5 — Altitude vs Air Quality
+
+Aggregates to one row per sensor
+
+Computes correlations between altitude and mean pollutant values
