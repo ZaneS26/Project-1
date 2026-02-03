@@ -1,8 +1,9 @@
 # Project-1-Air Quality Analysis 
 # Project Files
- - [Jupyter](notebooks/PythonCode.ipynb)
-- [Raw Python script](src/raw.py)
-- [Dataset](data/AirQuality_Daily_StudentVersioncsv)
+- [Dataset (CSV)](AirQuality_Daily_StudentVersion.csv)
+- [Jupyter Notebook](Python%20Code.ipynb)
+- [Python Script](raw.py)
+
 
 # Overview
 
